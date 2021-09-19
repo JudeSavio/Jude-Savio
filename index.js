@@ -17,8 +17,8 @@ window.addEventListener("scroll",function () {
         document.getElementsByClassName("circle")[0].style.animation = "none" 
     }
     else{
-        console.log('Scroll Event Detected -> Currently in Work Section')
         document.getElementsByClassName("circle")[0].style.animation = "MoveUpDown 1s linear infinite" 
     }
 }
 )
+
