@@ -1,0 +1,24 @@
+/* Portrait and Landscape iPad */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .nav-items{
+        width: 95%;
+        height: 60%;;
+    }
+    
+    .nav-items a{
+        font-size: 16px;
+    }
+
+    .nav-filler{
+        width: 5%;
+    }
+
+    .nav-logo img{
+        margin-top: -45%;
+    }
+
+}

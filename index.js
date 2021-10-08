@@ -54,6 +54,9 @@ window.onresize = function(){
         var nav_logo_img = document.getElementsByClassName("nav-logo-img")[0];
         nav_logo_img.style.width = "100px"
         nav_logo_img.style.height = "100px"
+
+        var circle = document.getElementsByClassName("circle")[0];
+        circle.style.display="none";
     }
 
     }
@@ -80,6 +83,9 @@ window.onload = function() {
         var nav_logo_img = document.getElementsByClassName("nav-logo-img")[0];
         nav_logo_img.style.width = "100px"
         nav_logo_img.style.height = "100px"
+
+        var circle = document.getElementsByClassName("circle")[0];
+        circle.style.display="none";
     }
 
 }
