@@ -22,3 +22,42 @@ window.addEventListener("scroll",function () {
 }
 )
 
+window.onresize = function(){
+
+    width = window.innerWidth
+    height = window.innerHeight
+  
+    // Particles to be reloaded on resize -> 767 x 1500
+    if(width>=767 && width<=1500)
+    {
+      particles.particles["number"].value = 30
+      location.reload()
+    }
+    else if(width>=1501)
+    {
+      particles.particles["number"].value = 60
+      location.reload()
+    }
+    }
+  
+// Window Reload hamburger option
+window.onload = function() {
+
+    width = window.innerWidth
+    height = window.innerHeight
+
+    if(width>=375 && width<767)
+    {
+        console.log("Mobile Screen Detected")
+        var nav = document.getElementsByClassName("nav-items")[0]
+        nav.innerHTML = ""
+        var hamburger = document.createElement("img");
+        hamburger.src = "./Assets/img/hamburger.svg"
+        nav.appendChild(hamburger);
+        console.log("Hamburger Added")
+        var nav_items = document.getElementsByClassName("nav-items")[0];
+        nav_items.setAttribute("class", "transparent-layer");
+    }
+
+}
+

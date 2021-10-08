@@ -7,6 +7,7 @@
     -moz-user-select: none;
     -khtml-user-select: none;
     -webkit-user-select: none;
+    scroll-snap-type: y proximity;
 }
 
 .Intro{
@@ -17,6 +18,7 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
+    scroll-snap-align:end;
 }
 
 .nav{
@@ -53,8 +55,8 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-radius: 50px;
+    background-color: rgba(255,255,255,.1);   
 }
 
 .nav-items a{
@@ -75,6 +77,11 @@
     background-color: #E6CEA0;
     color: #01161e;
     border-radius: 25px;
+    transform: translateY(10px);
+}
+
+.transparent-layer{
+    background-color: none;
 }
 
 .intro-section{
@@ -97,7 +104,7 @@
     font-weight: 900;
     font-size: 200%;
     text-align: center;
-    margin-top: 3%;
+    margin-top: 6%;
 }
 
 .info{
@@ -113,7 +120,7 @@
 
 .info h1{
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #39FF14; /* The typwriter cursor */
+    border-right: .15em solid #AEC3B0; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .10em; /* Adjust as needed */
@@ -131,12 +138,12 @@
     /* The typewriter cursor effect */
     @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: #E6CEA0; }
+    50% { border-color: #AEC3B0; }
 }
 
 .info h1 strong{
     color: #E6CEA0;
-    background-image: linear-gradient(to left,#667eea,#764ba2);
+    background-image: linear-gradient(to left,#bdbdfd,#bc7579,#535eeb,#00218a);
     background-size: 300%;
     background-position:-200%;
     animation: TextClip 5s infinite alternate-reverse;
@@ -216,6 +223,7 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    scroll-snap-align:end;
 }
 
 .work-tablets{
@@ -225,7 +233,6 @@
     z-index: 1;
     display: flex;
     flex-direction: column; 
-    margin-bottom: 5%;
 }
 
 .work-title{
@@ -256,6 +263,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1%;
 }
 
 .zoho{
@@ -345,6 +353,7 @@
     height: 100vh;
     width: 100wh;
     position: relative;
+    scroll-snap-align:end;
 }
 
 .Education{
@@ -352,6 +361,7 @@
     height: 100vh;
     width: 100wh;
     position: relative;
+    scroll-snap-align:end;
 }
 
 .Testimonial{
@@ -362,6 +372,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    scroll-snap-align:end;
 }
 
 .testimonial-card{
@@ -520,6 +531,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    scroll-snap-align:end;
 }
 
 .contact-title{
