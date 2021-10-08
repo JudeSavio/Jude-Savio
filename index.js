@@ -38,6 +38,21 @@ window.onresize = function(){
       particles.particles["number"].value = 60
       location.reload()
     }
+
+    if(width>=375 && width<767)
+    {
+        console.log("Mobile Screen Detected")
+        var nav = document.getElementsByClassName("nav-items")[0]
+        nav.innerHTML = ""
+        var hamburger = document.createElement("img");
+        hamburger.src = "./Assets/img/hamburger.svg"
+        nav.appendChild(hamburger);
+        console.log("Hamburger Added")
+        var nav_items = document.getElementsByClassName("nav-items")[0];
+        nav_items.setAttribute("class", "transparent-layer");
+        nav_items.style.justifyContent = "flex-end";
+    }
+
     }
   
 // Window Reload hamburger option
@@ -57,6 +72,7 @@ window.onload = function() {
         console.log("Hamburger Added")
         var nav_items = document.getElementsByClassName("nav-items")[0];
         nav_items.setAttribute("class", "transparent-layer");
+        nav_items.style.justifyContent = "flex-end";
     }
 
 }
