@@ -73,6 +73,10 @@ window.onload = function() {
         var nav_items = document.getElementsByClassName("nav-items")[0];
         nav_items.setAttribute("class", "transparent-layer");
         nav_items.style.justifyContent = "flex-end";
+
+        var nav_logo_img = document.getElementsByClassName("nav-logo-img")[0];
+        nav_logo_img.style.width = "100px"
+        nav_logo_img.style.height = "100px"
     }
 
 }
