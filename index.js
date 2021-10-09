@@ -52,8 +52,8 @@ window.onresize = function(){
         nav_items.setAttribute("class", "transparent-layer");
         nav_items.style.justifyContent = "flex-end";
         var nav_logo_img = document.getElementsByClassName("nav-logo-img")[0];
-        nav_logo_img.style.width = "100px"
-        nav_logo_img.style.height = "100px"
+        nav_logo_img.style.width = "80px"
+        nav_logo_img.style.height = "80px"
 
         var circle = document.getElementsByClassName("circle")[0];
         circle.style.display="none";
@@ -81,8 +81,8 @@ window.onload = function() {
         nav_items.style.justifyContent = "flex-end";
 
         var nav_logo_img = document.getElementsByClassName("nav-logo-img")[0];
-        nav_logo_img.style.width = "100px"
-        nav_logo_img.style.height = "100px"
+        nav_logo_img.style.width = "80px"
+        nav_logo_img.style.height = "80px"
 
         var circle = document.getElementsByClassName("circle")[0];
         circle.style.display="none";

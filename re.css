@@ -1,6 +1,9 @@
-/* Portrait and Landscape -> iPad */
+/* 
+
+IPAD
+
 @media only screen 
-  and (min-device-width: 768px) 
+  and (min-device-width: 767px) 
   and (max-device-width: 1024px) 
   and (-webkit-min-device-pixel-ratio: 1) {
 
@@ -10,7 +13,7 @@
     }
     
     .nav-items a{
-        font-size: 16px;
+        font-size: 21px;
     }
 
     .nav-filler{
@@ -28,16 +31,92 @@
     }
 
 }
+*/
 
-
-/* Portrait and Landscape -> iPhone */
+/* Portrait iPad*/
 @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
 
     .Intro{
-        background-color: brown;
+        width: 100%;
+        height: 85vh;
+    }
+
+    .intro-text{
+        width: 100%;
+    }
+
+    .info{
+        margin-top: 10%;
+    }
+
+    .info h1{
+        font-size: 22px;
+    }
+
+    .intro-tag{
+        font-size: 15px;
+        margin-top: 7%;
+    }
+
+    .intro-brief{
+        font-size: 18px;
+        line-height: 1.2em;
+        letter-spacing: 1px;
+        margin-top: 7%;
+    }
+
+    .Work{
+        height: 90vh;
+    }
+
+    .work-tablets{
+        margin-top: 10px;
+    }
+
+    .work-cards{
+        flex-direction: column;
+        height: 1500px;
+    }
+
+    .work-title img{
+        width: 60px;
+        height: 60px;
+    }
+
+    .zoho{
+        width:90%;
+        height: 270px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    .zoho h1{
+        font-size: 18px;
+    }
+
+    .zoho p{
+        font-size: 10px;
+    }
+
+    .company-work{
+        height: 120px;
+    }
+
+    .kaar{
+        width:90%;
+        height: 270px;
+    }
+
+    .kaar h1{
+        font-size: 18px;
+    }
+
+    .kaar p{
+        font-size: 10px;
     }
 
 }
