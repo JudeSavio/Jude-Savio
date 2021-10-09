@@ -28,9 +28,14 @@ window.onresize = function(){
     height = window.innerHeight
   
     // Particles to be reloaded on resize -> 767 x 1500
-    if(width>=767 && width<=1500)
+    if (width>=350 && width<=767)
     {
-      particles.particles["number"].value = 30
+        particles.particles["number"].value = 10
+        location.reload()
+    }
+    else if(width>=767 && width<=1500)
+    {
+      particles.particles["number"].value = 10
       location.reload()
     }
     else if(width>=1501)
