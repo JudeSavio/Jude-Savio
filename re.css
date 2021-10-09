@@ -73,10 +73,6 @@ IPAD
         height: 90vh;
     }
 
-    .work-tablets{
-        margin-top: 10px;
-    }
-
     .work-cards{
         flex-direction: column;
         height: 1500px;
